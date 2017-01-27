@@ -1,2 +1,1 @@
-# exitinterview
-After giving final notice, your boss wants you to leave the company with a bang!
+You heard there were piles of cash in an old abandoned office...
