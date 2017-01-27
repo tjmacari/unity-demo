@@ -1,0 +1,596 @@
+fileFormatVersion: 2
+guid: 67f5c2117821244f692cbad5c3f888d8
+timeCreated: 1476575475
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mainTexture_0
+    21300002: mainTexture_1
+    21300004: mainTexture_2
+    21300006: mainTexture_3
+    21300008: mainTexture_4
+    21300010: mainTexture_5
+    21300012: mainTexture_6
+    21300014: mainTexture_7
+    21300016: mainTexture_8
+    21300018: mainTexture_9
+    21300020: mainTexture_10
+    21300022: mainTexture_11
+    21300024: mainTexture_12
+    21300026: mainTexture_13
+    21300028: mainTexture_14
+    21300030: mainTexture_15
+    21300032: mainTexture_16
+    21300034: mainTexture_17
+    21300036: mainTexture_18
+    21300038: mainTexture_19
+    21300040: mainTexture_20
+    21300042: mainTexture_21
+    21300044: mainTexture_22
+    21300046: mainTexture_23
+    21300048: mainTexture_24
+    21300050: mainTexture_25
+    21300052: mainTexture_26
+    21300054: mainTexture_27
+    21300056: mainTexture_28
+    21300058: mainTexture_29
+    21300060: mainTexture_30
+    21300062: mainTexture_31
+    21300064: mainTexture_32
+    21300066: mainTexture_33
+    21300068: mainTexture_34
+    21300070: mainTexture_35
+    21300072: mainTexture_36
+    21300074: mainTexture_37
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 1
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 5
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: 12
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mainTexture_0
+      rect:
+        serializedVersion: 2
+        x: 2458
+        y: 3523
+        width: 445
+        height: 510
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48095053}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_1
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 3568
+        width: 300
+        height: 450
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_2
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 3568
+        width: 295
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_3
+      rect:
+        serializedVersion: 2
+        x: 3773
+        y: 3563
+        width: 246
+        height: 460
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_4
+      rect:
+        serializedVersion: 2
+        x: 2508
+        y: 2988
+        width: 285
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_5
+      rect:
+        serializedVersion: 2
+        x: 2913
+        y: 2983
+        width: 255
+        height: 455
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_6
+      rect:
+        serializedVersion: 2
+        x: 3253
+        y: 2938
+        width: 460
+        height: 520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_7
+      rect:
+        serializedVersion: 2
+        x: 2503
+        y: 2428
+        width: 405
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_8
+      rect:
+        serializedVersion: 2
+        x: 2998
+        y: 2428
+        width: 430
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_9
+      rect:
+        serializedVersion: 2
+        x: 3483
+        y: 2428
+        width: 356
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_10
+      rect:
+        serializedVersion: 2
+        x: 2498
+        y: 1853
+        width: 380
+        height: 505
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_11
+      rect:
+        serializedVersion: 2
+        x: 2998
+        y: 1853
+        width: 315
+        height: 505
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_12
+      rect:
+        serializedVersion: 2
+        x: 3438
+        y: 1853
+        width: 275
+        height: 475
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_13
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 1278
+        width: 335
+        height: 475
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_14
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 1288
+        width: 360
+        height: 490
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_15
+      rect:
+        serializedVersion: 2
+        x: 3403
+        y: 1278
+        width: 400
+        height: 475
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_16
+      rect:
+        serializedVersion: 2
+        x: 3930
+        y: 3350
+        width: 117
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_17
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1152
+        width: 336
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_18
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1152
+        width: 352
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_19
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 959
+        width: 384
+        height: 415
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_20
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 959
+        width: 519
+        height: 502
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_21
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 1046
+        width: 415
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_22
+      rect:
+        serializedVersion: 2
+        x: 3234
+        y: 1141
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_23
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 1143
+        width: 247
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_24
+      rect:
+        serializedVersion: 2
+        x: 3638
+        y: 1117
+        width: 205
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_25
+      rect:
+        serializedVersion: 2
+        x: 3325
+        y: 964
+        width: 247
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_26
+      rect:
+        serializedVersion: 2
+        x: 3671
+        y: 584
+        width: 321
+        height: 470
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_27
+      rect:
+        serializedVersion: 2
+        x: 3651
+        y: 68
+        width: 353
+        height: 472
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_28
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 418
+        width: 551
+        height: 534
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_29
+      rect:
+        serializedVersion: 2
+        x: 2837
+        y: 62
+        width: 410
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_30
+      rect:
+        serializedVersion: 2
+        x: 2580
+        y: 87
+        width: 217
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_31
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 92
+        width: 222
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_32
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 255
+        width: 312
+        height: 676
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_33
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 120
+        width: 801
+        height: 557
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_34
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 248
+        width: 640
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_35
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 795
+        width: 310
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_36
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 797
+        width: 315
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainTexture_37
+      rect:
+        serializedVersion: 2
+        x: 3932
+        y: 3248
+        width: 116
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

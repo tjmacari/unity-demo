@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{870C9F61-7909-AF83-8490-8AFC4E198EDC}") = "Office Mayhem", "Assembly-CSharp.csproj", "{0A8316FF-787D-7241-9BC0-A302531FC952}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A8316FF-787D-7241-9BC0-A302531FC952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8316FF-787D-7241-9BC0-A302531FC952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8316FF-787D-7241-9BC0-A302531FC952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8316FF-787D-7241-9BC0-A302531FC952}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
