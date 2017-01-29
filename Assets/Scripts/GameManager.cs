@@ -15,8 +15,9 @@ public class GameManager : MonoBehaviour {
         get {
 
             // If needed, create new game manager object
-            if (instance == null)
-                instance = new GameObject ("GameManager").AddComponent<GameManager>();
+            if (instance == null) {
+                instance = new GameObject ("GameManager").AddComponent<GameManager> ();
+            }
             return instance;
         }
     }
@@ -31,11 +32,23 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public bool InputAllowed {
+
+        get{ return bInputAllowed; }
+
+        set {
+            bInputAllowed = value;
+            Notifications.PostNotification (this, "InputChanged");
+        }
+    }
+
     // Since we are using this as as singleton, create internal private reference
     private static GameManager instance = null;
 
     // Internal reference to our notifications manager
     private static NotificationManager notifications = null;
+
+    private bool bInputAllowed = true;
 
     // Awake is, of course, called before Start on object creation
     void Awake() {

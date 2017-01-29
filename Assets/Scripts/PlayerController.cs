@@ -11,8 +11,14 @@ public class PlayerController : MonoBehaviour {
     // Amount of cash player has
     private float cash = 0.0f;
 
+    // Reference for transform
+    private Transform ThisTransform = null;
+
     // Respawn after death, time in seconds
     public float RespawnTime = 2.0f;
+
+    // Get Macanim animator component in children
+    private Animator AnimComp = null;
 
     // Player health
     public int health = 100;
@@ -29,13 +35,37 @@ public class PlayerController : MonoBehaviour {
     // Damage texture interval (amount of time in secs to show texture)
     private float DamageInterval = 0.2f;
 
+    // Default player weapon (punch)
+    public Weapon DefaultWeapon = null;
+
+    // Current active weapon
+    public Weapon ActiveWeapon = null;
+
     // Called when object is created
     void Start() {
+
+        // Register controller for weapon expriation events
+        GameManager.Notifications.AddListener(this, "AmmoExpired");
+
+        // Activate default weapon
+        DefaultWeapon.gameObject.SendMessage("Equip", DefaultWeapon.Type);
+
+        // Set active weapon
+        ActiveWeapon = DefaultWeapon;
+
+        // Get first person capsule and make non-visible
+        //MeshRenderer Capsule = GetComponentInChildren<MeshRenderer>();
+        //Capsule.enabled = false;
+       
+        AnimComp = GetComponentInChildren<Animator> ();
 
         // Create 1px 50% opaque red dot, then stretch it to fill screen, to indicate damage
         DamageTexture = new Texture2D(1, 1);
         DamageTexture.SetPixel (0, 0, new Color (255, 0, 0, 0.5f));
         DamageTexture.Apply ();
+
+        // Get cached transform
+        ThisTransform = transform;
     }
 
     // Accessors to get/set cash
@@ -52,9 +82,7 @@ public class PlayerController : MonoBehaviour {
 
             // Check if we've beaten level
             if (cash >= CashTotal) {
-
                 Debug.Log ("LEVEL COMPLETE!!!!!!");
-
                 GameManager.Notifications.PostNotification (this, "CashCollected");
             }
         }
@@ -68,7 +96,6 @@ public class PlayerController : MonoBehaviour {
 
         // Set health and validate, if required
         set {
-
             health = value;
 
             if (health <= 0)
@@ -107,13 +134,16 @@ public class PlayerController : MonoBehaviour {
     public IEnumerator Die() {
 
         // Disable input
-        //GameManager.Instance.InputAllowed = false;
+        GameManager.Instance.InputAllowed = false;
+
+        if (AnimComp)
+            AnimComp.SetTrigger ("ShowDeath");
 
         // Wait for respawn time to expire
         yield return new WaitForSeconds(RespawnTime);
 
         //Restart level
-        SceneManager.LoadScene (0);
+        Application.LoadLevel(Application.loadedLevel);
     }
 
     void Update() {
@@ -122,5 +152,31 @@ public class PlayerController : MonoBehaviour {
         ScreenRect.x = ScreenRect.y = 0;
         ScreenRect.width = Screen.width;
         ScreenRect.height = Screen.height;
+
+        if(Input.GetKeyDown(KeyCode.Period))
+            EquipNextWeapon();
+            
+    }
+
+    public void EquipNextWeapon() {
+
+        bool bFoundWeapon = false;
+
+        while (!bFoundWeapon) {
+
+            // Get next weapon
+            ActiveWeapon = ActiveWeapon.NextWeapon;
+
+            // Activate Weapon, if possible
+            ActiveWeapon.gameObject.SendMessage("Equip", ActiveWeapon.Type);
+
+            // Equipped?
+            bFoundWeapon = ActiveWeapon.IsEquipped;
+        }
+    }
+
+    public void AmmoExpired(Component Sender) {
+
+        EquipNextWeapon ();
     }
 }

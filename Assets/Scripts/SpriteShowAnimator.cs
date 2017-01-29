@@ -10,7 +10,7 @@ public class SpriteShowAnimator : MonoBehaviour {
     public ANIMATOR_PLAYBACK_TYPE PlaybackType = ANIMATOR_PLAYBACK_TYPE.PLAYONCE;
 
     // FPS
-    public int FPS = 6;
+    public int FPS = 5;
 
     // Custom anim ID
     public int AnimationID = 0;

@@ -7,19 +7,20 @@ public class Powerup_Dollar : MonoBehaviour {
     // Amount of cash incremeted each time for player
     public float CashAmount = 100.0f;
 
+    // Audio clip
+    public AudioClip PowerAudio = null;
+
     // Audio source for sound playback
     private AudioSource SFX = null;
 
-    // Audio clip
-    public AudioClip Clip = null;
-
 	void Start () {
 
-        // Find sound obj in scene
-        GameObject SoundsObject = GameObject.FindGameObjectWithTag("powerSound");
+        GameObject SoundsObject = GameObject.FindGameObjectWithTag ("sounds");
 
-        // Get audio source component for sfx
-        SFX = SoundsObject.GetComponent<AudioSource>();
+        if (SoundsObject == null)
+            return;
+
+        SFX = SoundsObject.GetComponent<AudioSource> ();
 	}
 
     // Event triggered when colliding with player
@@ -28,10 +29,9 @@ public class Powerup_Dollar : MonoBehaviour {
         // Is collider object a player?  Can't collide with enemies
         if(!Other.CompareTag("player")) return;
 
-        Debug.Log ("playing sounds...");
-
-        // Play collection sound, if audio source is available
-        SFX.PlayOneShot(Clip, 1.0f);
+        if (SFX) {
+            SFX.PlayOneShot (PowerAudio, 1.0f);
+        }
 
         // Hide away so can't be recollected later
         gameObject.SetActive(false);
