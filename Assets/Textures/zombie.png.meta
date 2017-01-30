@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 78e569a1634034c6da5f53eea88613a4
-timeCreated: 1485540950
+timeCreated: 1485759882
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,6 +16,14 @@ TextureImporter:
     21300018: zombie_9
     21300020: zombie_10
     21300022: zombie_11
+    21300024: zombie_12
+    21300026: zombie_13
+    21300028: zombie_14
+    21300030: zombie_15
+    21300032: zombie_16
+    21300034: zombie_17
+    21300036: zombie_18
+    21300038: zombie_19
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -98,50 +106,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zombie_0
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 612
-        width: 250
-        height: 390
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: zombie_1
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 612
-        width: 250
-        height: 390
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: zombie_2
-      rect:
-        serializedVersion: 2
-        x: 769
-        y: 610
-        width: 250
-        height: 390
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: zombie_3
       rect:
         serializedVersion: 2
-        x: 1061
-        y: 613
+        x: 1058
+        y: 1489
         width: 250
         height: 390
       alignment: 0
@@ -154,7 +123,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1350
-        y: 612
+        y: 1488
         width: 250
         height: 390
       alignment: 0
@@ -166,8 +135,8 @@ TextureImporter:
       name: zombie_5
       rect:
         serializedVersion: 2
-        x: 1652
-        y: 612
+        x: 1649
+        y: 1488
         width: 250
         height: 390
       alignment: 0
@@ -180,7 +149,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 211
-        y: 108
+        y: 978
         width: 250
         height: 390
       alignment: 0
@@ -192,8 +161,8 @@ TextureImporter:
       name: zombie_7
       rect:
         serializedVersion: 2
-        x: 486
-        y: 108
+        x: 481
+        y: 984
         width: 250
         height: 390
       alignment: 0
@@ -206,7 +175,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 761
-        y: 99
+        y: 975
         width: 250
         height: 390
       alignment: 0
@@ -218,8 +187,8 @@ TextureImporter:
       name: zombie_9
       rect:
         serializedVersion: 2
-        x: 1064
-        y: 99
+        x: 1061
+        y: 975
         width: 230
         height: 390
       alignment: 0
@@ -232,7 +201,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1303
-        y: 100
+        y: 973
         width: 250
         height: 390
       alignment: 0
@@ -244,9 +213,152 @@ TextureImporter:
       name: zombie_11
       rect:
         serializedVersion: 2
-        x: 1558
-        y: 99
+        x: 1561
+        y: 975
         width: 250
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_0
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1488
+        width: 250
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_1
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1490
+        width: 250
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_2
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1488
+        width: 250
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_12
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 516
+        width: 197
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_13
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 516
+        width: 247
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_14
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 516
+        width: 314
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_15
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 518
+        width: 386
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_16
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 516
+        width: 381
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_17
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 47
+        width: 412
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_18
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 50
+        width: 459
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zombie_19
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 50
+        width: 465
         height: 390
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
