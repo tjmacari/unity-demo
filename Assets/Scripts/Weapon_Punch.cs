@@ -30,7 +30,7 @@ public class Weapon_Punch : Weapon {
             // Target hit - check if target is enemy
             if (hit.collider.gameObject.CompareTag ("enemy")) {
 
-                hit.collider.gameObject.SendMessage ("Damange", Damage, SendMessageOptions.DontRequireReceiver);
+                hit.collider.gameObject.SendMessage ("Damage", Damage, SendMessageOptions.DontRequireReceiver);
             }
         }
 

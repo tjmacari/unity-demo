@@ -47,7 +47,7 @@ public class NotificationManager: MonoBehaviour {
 	// Post notification to listener
 	public void PostNotification(Component Sender, string NotificationName) {
 
-        Debug.Log ("Notification: " + Sender + " - " + NotificationName);
+        //Debug.Log ("Notification: " + Sender + " - " + NotificationName);
 
 		// Exit if no matching key in dictionary
 		if(!Listeners.ContainsKey(NotificationName)) return;

@@ -1,17 +1,38 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-    // Enum of enemy states
-    public enum ENEMY_STATE {PATROL = 0, CHASE = 1, ATTACK = 2};
-
-    // Current state
-    public ENEMY_STATE ActiveState = ENEMY_STATE.PATROL;
-
-    // Current health
     public int Health = 100;
 
-    
+    public IEnumerator Damage(int Damage = 0) {
+
+        Health -= Damage;
+
+        // Play damage animation
+        gameObject.SendMessage("PlayColorAnimation", 0, SendMessageOptions.DontRequireReceiver);
+
+        if (Health <= 0) {
+
+            // Send enemy destroyed notif
+            GameManager.Notifications.PostNotification(this, "EnemyDestroyed");
+
+            // Show death animation
+            gameObject.SendMessage ("StopSpriteAnimation", 0, SendMessageOptions.DontRequireReceiver);
+
+            // After small delay, remove this enemy
+            float DelayTime = 1.0f/8;
+            int Frame = 0;
+            do {
+                yield return new WaitForSeconds (DelayTime);
+                Frame++;
+                if(Frame == 7) {
+                    DestroyImmediate(gameObject);
+
+                    // Clean up old listeners
+                    GameManager.Notifications.RemoveRedundancies();
+                }
+            } while(Frame < 8);
+        }
+    }
 }

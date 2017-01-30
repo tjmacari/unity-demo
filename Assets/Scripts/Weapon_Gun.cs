@@ -24,13 +24,14 @@ public class Weapon_Gun : Weapon {
 
         // Test for collision
         RaycastHit hit;
-
         if (Physics.Raycast (R.origin, R.direction, out hit, Range)) {
 
             // Target hit - check if target is enemy
             if (hit.collider.gameObject.CompareTag ("enemy")) {
 
-                hit.collider.gameObject.SendMessage ("Damange", Damage, SendMessageOptions.DontRequireReceiver);
+                Debug.Log ("Enemy hit!");
+
+                hit.collider.gameObject.SendMessage ("Damage", Damage, SendMessageOptions.DontRequireReceiver);
             }
         }
 
