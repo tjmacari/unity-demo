@@ -144,7 +144,7 @@ public class PlayerController : MonoBehaviour {
         yield return new WaitForSeconds(RespawnTime);
 
         //Restart level
-        Application.LoadLevel(Application.loadedLevel);
+        //Application.LoadLevel(Application.loadedLevel);
     }
 
     void Update() {

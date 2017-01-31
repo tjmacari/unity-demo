@@ -8,7 +8,7 @@ public class Powerup_Dollar : MonoBehaviour {
     public float CashAmount = 100.0f;
 
     // Audio clip
-    public AudioClip PowerAudio = null;
+    public AudioClip Clip = null;
 
     // Audio source for sound playback
     private AudioSource SFX = null;
@@ -29,9 +29,7 @@ public class Powerup_Dollar : MonoBehaviour {
         // Is collider object a player?  Can't collide with enemies
         if(!Other.CompareTag("player")) return;
 
-        if (SFX) {
-            SFX.PlayOneShot (PowerAudio, 1.0f);
-        }
+        if (SFX) SFX.PlayOneShot (Clip, 1.0f);
 
         // Hide away so can't be recollected later
         gameObject.SetActive(false);

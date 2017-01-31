@@ -23,6 +23,15 @@ public class Enemy : MonoBehaviour {
     protected Transform ThisTransform = null;
 
 
+    // AUDIO PROPERTIES
+
+    // Audio clip
+    public AudioClip Clip = null;
+
+    // Audio source for sound playback
+    private AudioSource SFX = null;
+
+
     // AI PROPERTIES
 
     // Reference to NavMesh agent component
@@ -35,7 +44,7 @@ public class Enemy : MonoBehaviour {
     protected Transform PlayerTransform = null;
 
     // Unity units distance before enemy changes
-    public float PatrolDistance = 10.0f;
+    public float PatrolDistance = 8.0f;
 
     public float AttackDistance = 1.0f;
 
@@ -55,6 +64,11 @@ public class Enemy : MonoBehaviour {
     public SpriteRenderer DefaultSprite = null;
 
     protected virtual void Start() {
+
+        // Init Audio
+        GameObject SoundsObject = GameObject.FindGameObjectWithTag ("sounds");
+        if (SoundsObject == null) return;
+        SFX = SoundsObject.GetComponent<AudioSource> ();
 
         Agent = GetComponent<NavMeshAgent> ();
 
@@ -95,8 +109,6 @@ public class Enemy : MonoBehaviour {
 
     private IEnumerator AI_Patrol() {
 
-        Agent.Stop ();
-
         while (ActiveState == ENEMY_STATE.PATROL) {
 
             // Get random destination on map
@@ -120,8 +132,14 @@ public class Enemy : MonoBehaviour {
             // Elapsed time
             float ElapsedTime = 0;
 
-            // Wait until next frame
-            yield return null;
+            // Wait until enemy reaches destination or times out, then get new position
+            while (Vector3.Distance (ThisTransform.position, hit.position) > ArrivalDistance &&
+                ElapsedTime < TimeOut) {
+                ElapsedTime += Time.deltaTime;
+
+                // Wait until next frame
+                yield return null;
+            }
         }
     }
 
@@ -156,6 +174,8 @@ public class Enemy : MonoBehaviour {
     }
 
     public IEnumerator Damage(int Damage = 0) {
+
+        if (SFX) SFX.PlayOneShot (Clip, 1.0f);
 
         Health -= Damage;
 
