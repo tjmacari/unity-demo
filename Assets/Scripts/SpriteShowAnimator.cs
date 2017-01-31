@@ -38,11 +38,8 @@ public class SpriteShowAnimator : MonoBehaviour {
         if(AnimID != AnimationID) yield break;
 
         // Should hide all sprite renderers?
-        if (HideSpritesOnStart) {
-            foreach (SpriteRenderer SR in Sprites) {
-                SR.enabled = false;
-            }
-        }
+        if (HideSpritesOnStart)
+            foreach (SpriteRenderer SR in Sprites) SR.enabled = false;
 
         // Set is playing
         IsPlaying = true;

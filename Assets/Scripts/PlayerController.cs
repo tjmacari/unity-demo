@@ -97,6 +97,7 @@ public class PlayerController : MonoBehaviour {
         // Set health and validate, if required
         set {
             health = value;
+            Debug.Log (health);
 
             if (health <= 0)
                 gameObject.SendMessage ("Die", SendMessageOptions.DontRequireReceiver);
