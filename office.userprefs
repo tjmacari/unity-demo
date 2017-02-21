@@ -1,8 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Items/Weapon/Weapon.cs">
     <Files>
-      <File FileName="Assets/Scripts/Enemy.cs" Line="179" Column="1" />
+      <File FileName="Assets/Scripts/Actors/Code/Enemy/Enemy.cs" Line="31" Column="1" />
+      <File FileName="Assets/Scripts/Actors/Code/Enemy/Enemy_ZombieBlue.cs" Line="7" Column="52" />
+      <File FileName="Assets/Scripts/Actors/Code/Enemy/Enemy_ZombieGreen.cs" Line="7" Column="53" />
+      <File FileName="Assets/Scripts/Items/Weapon/Weapon_Punch.cs" Line="12" Column="25" />
+      <File FileName="Assets/Scripts/Items/Weapon/Weapon_Gun.cs" Line="8" Column="9" />
+      <File FileName="Assets/Scripts/Items/Weapon/Weapon.cs" Line="76" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
